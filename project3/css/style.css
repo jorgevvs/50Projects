@@ -1,0 +1,90 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@900&display=swap');
+
+*{
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+
+    height: 100vh;
+}
+.display{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+}
+.play{
+    color: white;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-image: url(/project3/img/ps.jpg);
+    background-size: cover;
+    width: 50vw;
+    transition: all 1s;
+}
+.play::before{
+    content:"";
+    background-color: rgb(0, 0, 255,0.6);
+    width: 100%;
+    height: 100%;
+    position: absolute;
+}
+
+.xbox{
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-image: url(/project3/img/xbox.jpg);
+    background-size: cover;
+    width: 50vw;
+    position: relative;
+    transition: all 1s;
+    background-position-x: -200px;
+}
+.xbox::before{
+    content: "";
+    width: 100%;
+    height: 100%;
+    background-color: rgb(0, 0, 0,0.8);
+    position: absolute;
+}
+
+.btn{
+    padding: 20px 40px;
+    border: white 2px solid;
+    font-size: 20px;
+    text-decoration: none;
+    color: white;
+    text-transform: uppercase;
+    position: relative;
+    bottom: 60px;
+}
+h1{
+    font-size: 65px;
+    position: relative;
+    bottom: 60px;
+}
+.show{
+    width: 99vw;
+}
+.show::before{
+    content: "";
+    display: none;
+}
+
+.xbox .btn:hover{
+    border: black 2px solid;
+    color: black;
+    background-color: white;
+}
+
+.play .btn:hover{
+    border: white 2px solid;
+    background-color: blue;
+}

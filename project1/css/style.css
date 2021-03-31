@@ -35,7 +35,7 @@ body{
     padding-left: 50px;
     color: white;
     display: none;
-    transition: all .5s .5s;
+    transition: all .5s ease 1s;
     font-size: 30px;
 }
 
@@ -43,5 +43,5 @@ body{
     width: 50vw;
 }
 .show h4{
-    display: inline-block;
+    display: block;
 }
