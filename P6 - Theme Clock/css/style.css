@@ -1,0 +1,117 @@
+
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Otomanopee One', sans-serif;
+}
+
+
+
+body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content:center;
+    height: 100vh;
+}
+
+.clock{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 400px;
+    width: 400px;
+    border-radius: 100%;
+}
+
+.min{
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 400px;
+    width: 400px;
+}
+.minpointer{
+    background-color: black;
+    width: 5px;
+    transform: translate(0,-90px);
+    height: 180px;
+}
+
+.sec{
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 400px;
+    width: 400px;
+
+}
+.secpointer{
+    background-color: red;
+    width: 5px;
+    transform: translate(0,-79px);
+    height: 150px;
+}
+
+.hour{
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 400px;
+    width: 400px;
+}
+.hourpointer{
+    background-color: black;
+    width: 5px;
+    transform: translate(0,-50px);
+    height: 100px;
+}
+
+.dot{
+    position: absolute;
+    background-color: black;
+    width: 10px;
+    height: 10px;
+    border-radius: 100%;
+}
+
+button{
+    background-color: black;
+    border: none;
+    border-radius: 10px;
+    width: 8vw;
+    height: 4vh;
+    color: white;
+    transform: translate(0,-50px);
+    cursor:pointer;
+    
+}
+
+.dateNhour{
+    text-align: center;
+    color: black;
+    transform: translate(0,20px);
+}
+.hourdig{
+    font-size: 60px;
+}
+.day{
+    font-size: 15px;
+    padding: 3px;
+    background-color: black;
+    border-radius: 100%;
+    color: white;
+}
+
+.dark{
+    color: white;
+    background-color: black;
+}
+.light{
+    color: black;
+    background-color: white;
+}
